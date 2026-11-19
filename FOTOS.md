@@ -1,6 +1,6 @@
 # Rocalm — Fotos reales pendientes
 
-Ahora la web usa ilustraciones SVG. Cada foto real se guarda con el mismo nombre (cambiando `.svg` por `.jpg`) y se actualiza la ruta en el HTML.
+Ahora la web usa ilustraciones de producto en SVG (4 vistas por prenda). Si más adelante consigues fotos reales, se guardan con el mismo nombre (cambiando `.svg` por `.jpg`) y se actualiza la ruta en el HTML.
 
 ## Reglas para que todas parezcan de la misma marca
 

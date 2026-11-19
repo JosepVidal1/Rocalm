@@ -83,5 +83,5 @@ Probado a 375 px (móvil), 768 px (tableta) y 1280 px (escritorio) sin desbordam
 ## Créditos
 
 - Fuente **Inter**, de The Inter Project Authors, con licencia SIL Open Font License 1.1 (`fonts/LICENSE-Inter.txt`).
-- Logotipo e ilustraciones de producto: creación propia en SVG.
+- Logotipo e ilustraciones de producto (4 vistas por prenda: frente, espalda y dos detalles): creación propia en SVG, con degradados, textura de tejido y costuras dibujadas.
 - Desarrollado con ayuda de un asistente de IA (Claude) para generar y revisar código. Las decisiones de diseño, la temática y la validación con usuarios son del alumno.
