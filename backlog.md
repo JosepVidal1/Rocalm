@@ -47,10 +47,8 @@ index.html (Inicio)
 | 16/11/2026 | Paleta clara, logotipo, buscador con `datalist`, login, filtro por actividad. Corte, tejido, cuidados y reseñas en cada ficha. | El buscador no busca de verdad sin JavaScript | Revisar el temario de la Q4 |
 | 19/11/2026 | Añadidos `grid-template-areas`, `@font-face`, `box-shadow`, `text-shadow`, `hsla` y `border-image`. Quitados los vídeos vacíos. Validación W3C con 0 errores. README, capturas y repositorio Git. | Fotos reales pendientes | Fotos y ensayar la demo |
 
-## Retrospectiva de la Fita 1 (escríbela tú)
+## Retrospectiva de la Fita 1
 
-Dos o tres líneas con tus palabras. Es tu reflexión personal, así que no la he rellenado.
-
-- **Qué me ha costado más:**
-- **Qué ha funcionado bien:**
-- **Qué haré distinto en la Fita 2:**
+- **Qué me ha costado más:** organizarme por sprints quincenales. Empecé tarde y gran parte del trabajo lo hice en pocos días. También entender las partes más avanzadas del CSS, como el filtro con `:has()` y los botones de radio ocultos.
+- **Qué ha funcionado bien:** elegir un tema que me gusta, la ropa de pilates y yoga, me ha mantenido motivado. Mejorar la web por versiones también: pasé de colores oscuros a una paleta clara, y añadí logotipo, buscador y reseñas cuando veía lo que no me convencía.
+- **Qué haré distinto en la Fita 2:** trabajar un poco cada semana, hacer un commit cada vez que termine una tarea, apuntar el registro de sprint dos veces por semana y asegurarme de entender cada parte antes de pasar a la siguiente.
