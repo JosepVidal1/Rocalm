@@ -1,0 +1,8 @@
+Validación con Nu Html Checker (vnu.jar, el mismo motor que validator.w3.org)
+Fecha: 2026-11-19
+
+== HTML (13 páginas) ==
+Resultado: 0 errores, 0 avisos
+
+== CSS (css/estilos.css) ==
+Resultado: 0 errores
