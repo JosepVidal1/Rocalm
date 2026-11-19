@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accede a tu cuenta de Rocalm o crea una nueva.">
+  <title>Iniciar sesión | Rocalm</title>
+  <link rel="icon" href="img/logo-simbolo.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso">Envío gratis desde 60 € · Devoluciones gratuitas en 30 días</p>
+  <!-- Cabecera: se repite igual en todas las páginas -->
+  <header>
+    <a class="logo" href="index.html">
+      <img src="img/logo-simbolo.svg" alt="" width="36" height="36">
+      <span>rocalm</span>
+    </a>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="index.html#historia">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Buscador: datalist ofrece sugerencias sin JavaScript -->
+    <form class="buscador" action="catalogo.html" method="get" role="search">
+      <label class="oculto" for="buscar">Buscar artículos o actividad</label>
+      <input type="search" id="buscar" name="q" list="sugerencias" placeholder="Buscar artículo o actividad">
+      <datalist id="sugerencias">
+        <option value="Legging Alinea"></option>
+        <option value="Legging Flow 7/8"></option>
+        <option value="Top Línea"></option>
+        <option value="Camiseta Brisa"></option>
+        <option value="Body Contorno"></option>
+        <option value="Chaqueta Define"></option>
+        <option value="Sudadera Calma"></option>
+        <option value="Calcetines Grip"></option>
+        <option value="Pilates"></option>
+        <option value="Yoga"></option>
+        <option value="Leggings"></option>
+        <option value="Tops"></option>
+        <option value="Capas"></option>
+        <option value="Accesorios"></option>
+      </datalist>
+      <button type="submit">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+        <span class="oculto">Buscar</span>
+      </button>
+    </form>
+    <a class="icono cuenta" href="login.html" aria-current="page">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      <span class="oculto">Iniciar sesión</span>
+    </a>
+    <a class="icono cesta" href="carrito.html">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      <span class="oculto">Cesta:</span> <span class="cesta-numero">2</span> <span class="oculto">artículos</span>
+    </a>
+  </header>
+
+  <main id="contenido">
+    <h1>Tu cuenta</h1>
+    <p class="intro">Consulta tus pedidos, guarda tus tallas y compra más rápido.</p>
+
+    <div class="acceso">
+      <section>
+        <h2>Iniciar sesión</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="login-email">Correo electrónico</label>
+            <input type="email" id="login-email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="login-clave">Contraseña</label>
+            <input type="password" id="login-clave" name="clave" autocomplete="current-password" required>
+          </p>
+          <p class="casilla">
+            <input type="checkbox" id="recordar" name="recordar">
+            <label for="recordar">Recordarme en este dispositivo</label>
+          </p>
+          <p><button type="submit" class="boton boton-ancho">Entrar</button></p>
+          <p class="meta"><a href="contacto.html">¿Has olvidado tu contraseña?</a></p>
+        </form>
+      </section>
+
+      <section>
+        <h2>Crear cuenta</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="alta-nombre">Nombre</label>
+            <input type="text" id="alta-nombre" name="nombre" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="alta-email">Correo electrónico</label>
+            <input type="email" id="alta-email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="alta-clave">Contraseña (mínimo 8 caracteres)</label>
+            <input type="password" id="alta-clave" name="clave" autocomplete="new-password" minlength="8" required>
+          </p>
+          <p class="casilla">
+            <input type="checkbox" id="alta-privacidad" name="privacidad" required>
+            <label for="alta-privacidad">Acepto la política de privacidad</label>
+          </p>
+          <p><button type="submit" class="boton boton-ancho boton-linea">Crear cuenta</button></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Pie: se repite igual en todas las páginas -->
+  <footer>
+    <div class="pie-columnas">
+      <section>
+        <h2>Ayuda</h2>
+        <ul>
+          <li><a href="contacto.html#preguntas">Envíos y devoluciones</a></li>
+          <li><a href="legging-alinea.html#tallas">Guía de tallas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Rocalm</h2>
+        <ul>
+          <li><a href="index.html#historia">Nuestra historia</a></li>
+          <li><a href="catalogo.html">Colección</a></li>
+          <li><a href="index.html#boletin">Boletín</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Síguenos</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/" rel="noopener">TikTok</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="pie-legal">&copy; 2026 Rocalm. Proyecto Integrador de Lenguajes de Marcas (DAM).</p>
+  </footer>
+</body>
+</html>

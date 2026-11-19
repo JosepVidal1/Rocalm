@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Legging Alinea de Rocalm. Legging de talle alto con costuras planas y tejido de tacto mantequilla.">
+  <title>Legging Alinea | Rocalm</title>
+  <link rel="icon" href="img/logo-simbolo.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso">Envío gratis desde 60 € · Devoluciones gratuitas en 30 días</p>
+  <!-- Cabecera: se repite igual en todas las páginas -->
+  <header>
+    <a class="logo" href="index.html">
+      <img src="img/logo-simbolo.svg" alt="" width="36" height="36">
+      <span>rocalm</span>
+    </a>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="index.html#historia">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Buscador: datalist ofrece sugerencias sin JavaScript -->
+    <form class="buscador" action="catalogo.html" method="get" role="search">
+      <label class="oculto" for="buscar">Buscar artículos o actividad</label>
+      <input type="search" id="buscar" name="q" list="sugerencias" placeholder="Buscar artículo o actividad">
+      <datalist id="sugerencias">
+        <option value="Legging Alinea"></option>
+        <option value="Legging Flow 7/8"></option>
+        <option value="Top Línea"></option>
+        <option value="Camiseta Brisa"></option>
+        <option value="Body Contorno"></option>
+        <option value="Chaqueta Define"></option>
+        <option value="Sudadera Calma"></option>
+        <option value="Calcetines Grip"></option>
+        <option value="Pilates"></option>
+        <option value="Yoga"></option>
+        <option value="Leggings"></option>
+        <option value="Tops"></option>
+        <option value="Capas"></option>
+        <option value="Accesorios"></option>
+      </datalist>
+      <button type="submit">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+        <span class="oculto">Buscar</span>
+      </button>
+    </form>
+    <a class="icono cuenta" href="login.html">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      <span class="oculto">Iniciar sesión</span>
+    </a>
+    <a class="icono cesta" href="carrito.html">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      <span class="oculto">Cesta:</span> <span class="cesta-numero">2</span> <span class="oculto">artículos</span>
+    </a>
+  </header>
+
+  <main id="contenido">
+    <!-- Migas de pan: indican dónde está el usuario -->
+    <nav class="migas" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html#leggings">Leggings</a></li>
+        <li>Legging Alinea</li>
+      </ol>
+    </nav>
+
+    <article class="ficha">
+      <!-- Galería sin JavaScript: cada miniatura marca un radio y el CSS muestra su foto -->
+      <div class="galeria">
+        <input class="oculto" type="radio" name="foto" id="foto1" checked>
+        <input class="oculto" type="radio" name="foto" id="foto2">
+        <input class="oculto" type="radio" name="foto" id="foto3">
+        <input class="oculto" type="radio" name="foto" id="foto4">
+        <div class="galeria-principal">
+          <img src="img/p01.svg" alt="Legging Alinea, vista frontal" width="600" height="750">
+          <img src="img/p01-2.svg" alt="Legging Alinea, vista trasera" width="600" height="750">
+          <img src="img/p01-3.svg" alt="Legging Alinea, detalle superior" width="600" height="750">
+          <img src="img/p01-4.svg" alt="Legging Alinea, detalle inferior" width="600" height="750">
+        </div>
+        <div class="galeria-miniaturas">
+          <label for="foto1"><img src="img/p01.svg" alt="Ver vista frontal" width="600" height="750"></label>
+          <label for="foto2"><img src="img/p01-2.svg" alt="Ver vista trasera" width="600" height="750"></label>
+          <label for="foto3"><img src="img/p01-3.svg" alt="Ver detalle superior" width="600" height="750"></label>
+          <label for="foto4"><img src="img/p01-4.svg" alt="Ver detalle inferior" width="600" height="750"></label>
+        </div>
+      </div>
+
+      <h1>Legging Alinea</h1>
+      <p class="etiqueta">Más vendido</p>
+      <p class="valoracion"><span class="estrellas" aria-hidden="true">★★★★★</span> <a href="#resenas">4,8 de 5 · 126 reseñas</a></p>
+      <p class="precio precio-grande">68,00 €</p>
+      <p>Legging de talle alto con costuras planas y tejido de tacto mantequilla. Pensado para pilates.</p>
+
+      <section>
+        <h2 class="oculto">Comprar</h2>
+        <form class="compra" action="carrito.html" method="get">
+          <fieldset class="opciones">
+            <legend>Color</legend>
+            <div class="colores">
+              <input class="oculto" type="radio" name="color" id="color0" value="Negro" checked>
+              <label class="c-negro" for="color0"><span class="oculto">Negro</span></label>
+              <input class="oculto" type="radio" name="color" id="color1" value="Verde salvia">
+              <label class="c-verde-salvia" for="color1"><span class="oculto">Verde salvia</span></label>
+              <input class="oculto" type="radio" name="color" id="color2" value="Gris piedra">
+              <label class="c-gris-piedra" for="color2"><span class="oculto">Gris piedra</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="opciones">
+            <legend>Talla</legend>
+            <div class="tallas">
+              <input class="oculto" type="radio" name="talla" id="talla-XS" value="XS" required>
+              <label for="talla-XS">XS</label>
+              <input class="oculto" type="radio" name="talla" id="talla-S" value="S" required>
+              <label for="talla-S">S</label>
+              <input class="oculto" type="radio" name="talla" id="talla-M" value="M" required>
+              <label for="talla-M">M</label>
+              <input class="oculto" type="radio" name="talla" id="talla-L" value="L" required>
+              <label for="talla-L">L</label>
+            </div>
+          </fieldset>
+          <p>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
+          </p>
+          <p><button type="submit" class="boton boton-ancho">Añadir a la cesta</button></p>
+        </form>
+        <p class="meta">Envío gratis desde 60 € · Devolución gratuita en 30 días</p>
+      </section>
+
+      <!-- details/summary: desplegables sin JavaScript -->
+      <section class="desplegables">
+        <h2 class="oculto">Detalles del producto</h2>
+        <details open>
+          <summary>Corte y características</summary>
+          <p>Talle alto y ajuste ceñido de segunda piel. Largo completo: 71 cm de entrepierna.</p>
+          <ul>
+            <li>Cintura alta sin costura frontal.</li>
+            <li>Costuras planas que no rozan.</li>
+            <li>Bolsillo oculto en la cintura para llave o tarjeta.</li>
+            <li>Refuerzo en la entrepierna para moverte con libertad.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Tejido</summary>
+          <p><strong>Tejido Calma.</strong> Tacto mantequilla, compresión suave y elástico en cuatro direcciones. No se transparenta en sentadilla.</p>
+        </details>
+        <details>
+          <summary>Materiales y cuidado</summary>
+          <p><strong>Composición:</strong> 78 % poliamida reciclada, 22 % elastano.</p>
+          <ul>
+            <li>Lavar a máquina en frío (30 °C), del revés.</li>
+            <li>No usar suavizante: reduce la elasticidad.</li>
+            <li>Secar al aire, sin secadora.</li>
+            <li>No planchar ni lavar en seco.</li>
+          </ul>
+        </details>
+        <details id="tallas">
+          <summary>Guía de tallas</summary>
+          <table>
+            <caption>Medidas en centímetros</caption>
+            <thead>
+              <tr><th scope="col">Talla</th><th scope="col">Cintura</th><th scope="col">Cadera</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">XS</th><td>60-64</td><td>86-90</td></tr>
+              <tr><th scope="row">S</th><td>65-69</td><td>91-95</td></tr>
+              <tr><th scope="row">M</th><td>70-74</td><td>96-100</td></tr>
+              <tr><th scope="row">L</th><td>75-80</td><td>101-106</td></tr>
+              <tr><th scope="row">XL</th><td>81-87</td><td>107-113</td></tr>
+            </tbody>
+          </table>
+        </details>
+        <details>
+          <summary>Envíos y devoluciones</summary>
+          <p>Entrega en 24-48 h en península. Tienes 30 días para devolver o cambiar la talla sin coste.</p>
+        </details>
+      </section>
+
+    </article>
+
+    <!-- Reseñas (textos de ejemplo para el prototipo) -->
+    <section class="resenas" id="resenas">
+      <h2>Reseñas</h2>
+      <div class="resenas-resumen">
+        <p class="nota"><strong>4,8</strong> de 5</p>
+        <p class="estrellas" aria-hidden="true">★★★★★</p>
+        <p class="meta">126 reseñas de compradoras</p>
+        <dl>
+          <dt>5 estrellas</dt><dd><meter min="0" max="100" value="80">80 %</meter> 80 %</dd>
+          <dt>4 estrellas</dt><dd><meter min="0" max="100" value="13">13 %</meter> 13 %</dd>
+          <dt>3 estrellas</dt><dd><meter min="0" max="100" value="4">4 %</meter> 4 %</dd>
+          <dt>2 estrellas</dt><dd><meter min="0" max="100" value="1">1 %</meter> 1 %</dd>
+          <dt>1 estrellas</dt><dd><meter min="0" max="100" value="2">2 %</meter> 2 %</dd>
+        </dl>
+      </div>
+      <div class="resenas-lista">
+        <article class="resena">
+          <p class="estrellas"><span aria-hidden="true">★★★★★</span><span class="oculto">5 de 5 estrellas</span></p>
+          <h3>No se mueve nada</h3>
+          <p>Lo uso en reformer tres veces por semana y la cintura se queda en su sitio. No se transparenta.</p>
+          <p class="meta">Marta G. · Talla comprada: M · 12 de octubre de 2026 · Compra verificada</p>
+        </article>
+        <article class="resena">
+          <p class="estrellas"><span aria-hidden="true">★★★★★</span><span class="oculto">5 de 5 estrellas</span></p>
+          <h3>Como una segunda piel</h3>
+          <p>El tejido es muy suave y no aprieta en la barriga. Ya tengo dos colores.</p>
+          <p class="meta">Lucía P. · Talla comprada: S · 28 de septiembre de 2026 · Compra verificada</p>
+        </article>
+        <article class="resena">
+          <p class="estrellas"><span aria-hidden="true">★★★★☆</span><span class="oculto">4 de 5 estrellas</span></p>
+          <h3>Muy cómodo, algo largo</h3>
+          <p>Mido 1,58 y me sobra un poco de largo, pero se ajusta bien al tobillo.</p>
+          <p class="meta">Irene S. · Talla comprada: XS · 3 de septiembre de 2026 · Compra verificada</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="rejilla relacionados">
+      <h2>Completa el conjunto</h2>
+
+      <article class="tarjeta" data-actividad="pilates">
+        <a class="tarjeta-foto" href="top-linea.html">
+          <img src="img/p03.svg" alt="Top Línea en color arena" width="600" height="750">
+          <img class="foto-hover" src="img/p03-2.svg" alt="" width="600" height="750">
+          <span class="ver">Ver producto</span>
+        </a>
+        <p class="etiqueta">Nuevo</p>
+        <h3><a href="top-linea.html">Top Línea</a></h3>
+        <ul class="muestras" aria-label="Colores disponibles"><li class="c-arena"><span class="oculto">Arena</span></li><li class="c-negro"><span class="oculto">Negro</span></li><li class="c-verde-salvia"><span class="oculto">Verde salvia</span></li></ul>
+        <p class="precio">42,00 €</p>
+      </article>
+
+      <article class="tarjeta" data-actividad="yoga">
+        <a class="tarjeta-foto" href="camiseta-brisa.html">
+          <img src="img/p04.svg" alt="Camiseta Brisa en color blanco roto" width="600" height="750">
+          <img class="foto-hover" src="img/p04-2.svg" alt="" width="600" height="750">
+          <span class="ver">Ver producto</span>
+        </a>
+        <h3><a href="camiseta-brisa.html">Camiseta Brisa</a></h3>
+        <ul class="muestras" aria-label="Colores disponibles"><li class="c-blanco-roto"><span class="oculto">Blanco roto</span></li><li class="c-arena"><span class="oculto">Arena</span></li></ul>
+        <p class="precio">38,00 €</p>
+      </article>
+
+      <article class="tarjeta" data-actividad="pilates">
+        <a class="tarjeta-foto" href="body-contorno.html">
+          <img src="img/p05.svg" alt="Body Contorno en color gris piedra" width="600" height="750">
+          <img class="foto-hover" src="img/p05-2.svg" alt="" width="600" height="750">
+          <span class="ver">Ver producto</span>
+        </a>
+        <p class="etiqueta">Nuevo</p>
+        <h3><a href="body-contorno.html">Body Contorno</a></h3>
+        <ul class="muestras" aria-label="Colores disponibles"><li class="c-gris-piedra"><span class="oculto">Gris piedra</span></li><li class="c-negro"><span class="oculto">Negro</span></li></ul>
+        <p class="precio">58,00 €</p>
+      </article>
+    </aside>
+  </main>
+
+  <!-- Pie: se repite igual en todas las páginas -->
+  <footer>
+    <div class="pie-columnas">
+      <section>
+        <h2>Ayuda</h2>
+        <ul>
+          <li><a href="contacto.html#preguntas">Envíos y devoluciones</a></li>
+          <li><a href="legging-alinea.html#tallas">Guía de tallas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Rocalm</h2>
+        <ul>
+          <li><a href="index.html#historia">Nuestra historia</a></li>
+          <li><a href="catalogo.html">Colección</a></li>
+          <li><a href="index.html#boletin">Boletín</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Síguenos</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/" rel="noopener">TikTok</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="pie-legal">&copy; 2026 Rocalm. Proyecto Integrador de Lenguajes de Marcas (DAM).</p>
+  </footer>
+</body>
+</html>

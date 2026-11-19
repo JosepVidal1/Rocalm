@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rocalm: ropa de pilates y yoga de cortes finos y acabados limpios.">
+  <title>Rocalm | Ropa de pilates y yoga</title>
+  <link rel="icon" href="img/logo-simbolo.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="aviso">Envío gratis desde 60 € · Devoluciones gratuitas en 30 días</p>
+  <!-- Cabecera: se repite igual en todas las páginas -->
+  <header>
+    <a class="logo" href="index.html">
+      <img src="img/logo-simbolo.svg" alt="" width="36" height="36">
+      <span>rocalm</span>
+    </a>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="index.html#historia">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <!-- Buscador: datalist ofrece sugerencias sin JavaScript -->
+    <form class="buscador" action="catalogo.html" method="get" role="search">
+      <label class="oculto" for="buscar">Buscar artículos o actividad</label>
+      <input type="search" id="buscar" name="q" list="sugerencias" placeholder="Buscar artículo o actividad">
+      <datalist id="sugerencias">
+        <option value="Legging Alinea"></option>
+        <option value="Legging Flow 7/8"></option>
+        <option value="Top Línea"></option>
+        <option value="Camiseta Brisa"></option>
+        <option value="Body Contorno"></option>
+        <option value="Chaqueta Define"></option>
+        <option value="Sudadera Calma"></option>
+        <option value="Calcetines Grip"></option>
+        <option value="Pilates"></option>
+        <option value="Yoga"></option>
+        <option value="Leggings"></option>
+        <option value="Tops"></option>
+        <option value="Capas"></option>
+        <option value="Accesorios"></option>
+      </datalist>
+      <button type="submit">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+        <span class="oculto">Buscar</span>
+      </button>
+    </form>
+    <a class="icono cuenta" href="login.html">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>
+      <span class="oculto">Iniciar sesión</span>
+    </a>
+    <a class="icono cesta" href="carrito.html">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      <span class="oculto">Cesta:</span> <span class="cesta-numero">2</span> <span class="oculto">artículos</span>
+    </a>
+  </header>
+
+  <main id="contenido" class="ancho-total">
+    <!-- Portada: la imagen de fondo está en el CSS (.hero) -->
+    <section class="hero">
+      <div class="hero-texto">
+        <p class="sobretitulo">Nueva colección · Otoño 2026</p>
+        <h1>Muévete en calma</h1>
+        <p>Ropa de pilates y yoga de cortes finos y acabados limpios, pensada para que nada te distraiga.</p>
+        <p><a class="boton boton-claro" href="catalogo.html">Ver la colección</a></p>
+      </div>
+    </section>
+
+    <!-- Ventajas de comprar -->
+    <section class="ventajas" aria-label="Ventajas de comprar en Rocalm">
+      <ul>
+        <li><strong>Envío en 24-48 h</strong> Gratis desde 60 €</li>
+        <li><strong>30 días de prueba</strong> Devolución gratuita</li>
+        <li><strong>Pago seguro</strong> Tarjeta, Bizum o PayPal</li>
+      </ul>
+    </section>
+
+    <!-- Categorías -->
+    <section class="contenedor">
+      <h2>Compra por categoría</h2>
+      <ul class="categorias">
+        <li><a href="catalogo.html#leggings"><img src="img/cat-leggings.svg" alt="" width="600" height="750"><span>Leggings</span></a></li>
+        <li><a href="catalogo.html#tops"><img src="img/cat-tops.svg" alt="" width="600" height="750"><span>Tops</span></a></li>
+        <li><a href="catalogo.html#capas"><img src="img/cat-capas.svg" alt="" width="600" height="750"><span>Capas</span></a></li>
+        <li><a href="catalogo.html#accesorios"><img src="img/cat-accesorios.svg" alt="" width="600" height="750"><span>Accesorios</span></a></li>
+      </ul>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="contenedor rejilla">
+      <h2>Los más vendidos</h2>
+
+      <article class="tarjeta" data-actividad="pilates">
+        <a class="tarjeta-foto" href="legging-alinea.html">
+          <img src="img/p01.svg" alt="Legging Alinea en color negro" width="600" height="750">
+          <img class="foto-hover" src="img/p01-2.svg" alt="" width="600" height="750">
+          <span class="ver">Ver producto</span>
+        </a>
+        <p class="etiqueta">Más vendido</p>
+        <h3><a href="legging-alinea.html">Legging Alinea</a></h3>
+        <ul class="muestras" aria-label="Colores disponibles"><li class="c-negro"><span class="oculto">Negro</span></li><li class="c-verde-salvia"><span class="oculto">Verde salvia</span></li><li class="c-gris-piedra"><span class="oculto">Gris piedra</span></li></ul>
+        <p class="precio">68,00 €</p>
+      </article>
+
+      <article class="tarjeta" data-actividad="pilates">
+        <a class="tarjeta-foto" href="top-linea.html">
+          <img src="img/p03.svg" alt="Top Línea en color arena" width="600" height="750">
+          <img class="foto-hover" src="img/p03-2.svg" alt="" width="600" height="750">
+          <span class="ver">Ver producto</span>
+        </a>
+        <p class="etiqueta">Nuevo</p>
+        <h3><a href="top-linea.html">Top Línea</a></h3>
+        <ul class="muestras" aria-label="Colores disponibles"><li class="c-arena"><span class="oculto">Arena</span></li><li class="c-negro"><span class="oculto">Negro</span></li><li class="c-verde-salvia"><span class="oculto">Verde salvia</span></li></ul>
+        <p class="precio">42,00 €</p>
+      </article>
+
+      <article class="tarjeta" data-actividad="pilates">
+        <a class="tarjeta-foto" href="chaqueta-define.html">
+          <img src="img/p06.svg" alt="Chaqueta Define en color negro" width="600" height="750">
+          <img class="foto-hover" src="img/p06-2.svg" alt="" width="600" height="750">
+          <span class="ver">Ver producto</span>
+        </a>
+        <h3><a href="chaqueta-define.html">Chaqueta Define</a></h3>
+        <ul class="muestras" aria-label="Colores disponibles"><li class="c-negro"><span class="oculto">Negro</span></li><li class="c-gris-piedra"><span class="oculto">Gris piedra</span></li></ul>
+        <p class="precio">95,00 €</p>
+      </article>
+
+      <article class="tarjeta" data-actividad="pilates">
+        <a class="tarjeta-foto" href="body-contorno.html">
+          <img src="img/p05.svg" alt="Body Contorno en color gris piedra" width="600" height="750">
+          <img class="foto-hover" src="img/p05-2.svg" alt="" width="600" height="750">
+          <span class="ver">Ver producto</span>
+        </a>
+        <p class="etiqueta">Nuevo</p>
+        <h3><a href="body-contorno.html">Body Contorno</a></h3>
+        <ul class="muestras" aria-label="Colores disponibles"><li class="c-gris-piedra"><span class="oculto">Gris piedra</span></li><li class="c-negro"><span class="oculto">Negro</span></li></ul>
+        <p class="precio">58,00 €</p>
+      </article>
+    </section>
+
+    <!-- Historia de la marca -->
+    <section class="contenedor editorial" id="historia">
+      <img src="img/historia.svg" alt="Detalle de las costuras planas de una prenda Rocalm" width="1200" height="1200">
+      <div>
+        <p class="sobretitulo">Nuestra historia</p>
+        <h2>Menos costuras, más movimiento</h2>
+        <p>Rocalm nace en Xàtiva con una idea sencilla: la ropa de entrenar no debería notarse. Por eso cada prenda tiene costuras planas, cortes limpios y tejidos que acompañan el cuerpo en lugar de apretarlo.</p>
+        <ul>
+          <li>Tejido de tacto mantequilla y secado rápido.</li>
+          <li>Colores neutros que combinan entre sí.</li>
+          <li>Producción en lotes pequeños.</li>
+        </ul>
+        <p><a class="boton" href="catalogo.html">Descubrir la colección</a></p>
+      </div>
+    </section>
+
+    <!-- Tejidos: maquetado con grid-template-areas -->
+    <section class="contenedor tejidos" id="tejidos">
+      <div class="tejidos-intro">
+        <p class="sobretitulo">Nuestros tejidos</p>
+        <h2>Cada actividad, su tejido</h2>
+        <p>Desarrollamos cada tejido pensando en cómo te mueves: compresión suave para pilates, ligereza para yoga y algodón para antes y después de clase.</p>
+      </div>
+      <article class="tejido tejido-calma">
+        <h3>Calma</h3>
+        <p>Tacto mantequilla y compresión suave. No se transparenta.</p>
+        <p class="meta">Leggings y tops</p>
+      </article>
+      <article class="tejido tejido-brisa">
+        <h3>Brisa</h3>
+        <p>Ligero y transpirable. Se seca en minutos.</p>
+        <p class="meta">Camisetas</p>
+      </article>
+      <article class="tejido tejido-define">
+        <h3>Define</h3>
+        <p>Tacto de algodón, elástico y de secado rápido.</p>
+        <p class="meta">Chaquetas</p>
+      </article>
+      <article class="tejido tejido-pausa">
+        <h3>Pausa</h3>
+        <p>Felpa de algodón orgánico, suave por dentro.</p>
+        <p class="meta">Sudaderas</p>
+      </article>
+    </section>
+
+    <!-- Opiniones (textos de ejemplo para el prototipo) -->
+    <section class="contenedor opiniones">
+      <h2>Lo que dicen de Rocalm</h2>
+      <figure>
+        <blockquote><p>El legging no se mueve ni se transparenta. Lo uso en reformer tres veces por semana.</p></blockquote>
+        <figcaption>Marta, instructora de pilates</figcaption>
+      </figure>
+      <figure>
+        <blockquote><p>Las costuras no se notan nada. Es la primera vez que me olvido de lo que llevo puesto.</p></blockquote>
+        <figcaption>Laura, practicante de yoga</figcaption>
+      </figure>
+      <figure>
+        <blockquote><p>Pedí el lunes y el miércoles lo tenía. El cambio de talla fue gratis y rápido.</p></blockquote>
+        <figcaption>Andrea, clienta</figcaption>
+      </figure>
+    </section>
+
+    <!-- Boletín: sirve para que el cliente vuelva -->
+    <section class="boletin" id="boletin">
+      <h2>10 % en tu primer pedido</h2>
+      <p>Suscríbete y recibe novedades y ofertas antes que nadie.</p>
+      <form action="#" method="post">
+        <label for="correo-boletin">Correo electrónico</label>
+        <input type="email" id="correo-boletin" name="correo" placeholder="tu@correo.com" required>
+        <button type="submit" class="boton">Suscribirme</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie: se repite igual en todas las páginas -->
+  <footer>
+    <div class="pie-columnas">
+      <section>
+        <h2>Ayuda</h2>
+        <ul>
+          <li><a href="contacto.html#preguntas">Envíos y devoluciones</a></li>
+          <li><a href="legging-alinea.html#tallas">Guía de tallas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Rocalm</h2>
+        <ul>
+          <li><a href="index.html#historia">Nuestra historia</a></li>
+          <li><a href="catalogo.html">Colección</a></li>
+          <li><a href="index.html#boletin">Boletín</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Síguenos</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/" rel="noopener">TikTok</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="pie-legal">&copy; 2026 Rocalm. Proyecto Integrador de Lenguajes de Marcas (DAM).</p>
+  </footer>
+</body>
+</html>
