@@ -70,7 +70,12 @@
   box-sizing: border-box;
 }
 
+/* El body es una columna flexible de al menos la altura de la pantalla:
+   main crece (flex: 1) y empuja el pie hasta abajo aunque haya poco contenido */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   font-family: var(--fuente);
   font-size: 1rem;
@@ -202,6 +207,8 @@ body > header nav a[aria-current="page"] {
 
 /* ---------- 6. Contenedor principal ---------- */
 main {
+  flex: 1 0 auto;
+  width: 100%;
   max-width: var(--ancho-max);
   margin: 0 auto;
   padding: var(--espacio-m) var(--espacio-s) var(--espacio-l);
@@ -1086,6 +1093,28 @@ main:has(#act-yoga:checked) .tarjeta:not([data-actividad="yoga"]),
 main:has(#act-pilates:checked) .rejilla:not(:has([data-actividad="pilates"])),
 main:has(#act-yoga:checked) .rejilla:not(:has([data-actividad="yoga"])) {
   display: none;
+}
+
+/* Mensaje sin resultados: oculto por defecto.
+   La única combinación sin productos es Accesorios + Yoga. */
+.sin-resultados {
+  display: none;
+  padding: var(--espacio-l) var(--espacio-m);
+  text-align: center;
+  color: var(--color-texto-suave);
+  background-color: var(--color-arena);
+}
+
+.sin-resultados label {
+  display: block;
+  margin-top: var(--espacio-s);
+  color: var(--color-texto);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main:has(#filtro-accesorios:checked):has(#act-yoga:checked) .sin-resultados {
+  display: block;
 }
 
 .filtros fieldset + fieldset {
