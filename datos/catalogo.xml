@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sprint 1: catálogo de la tienda Rocalm (documento XML bien formado) -->
+<catalogo tienda="Rocalm" moneda="EUR">
+  <producto id="p01" categoria="leggings">
+    <nombre>Legging Alinea</nombre>
+    <descripcion>Legging de talle alto con costuras planas y tejido de tacto mantequilla.</descripcion>
+    <precio>68.00</precio>
+    <colores>
+      <color hex="#1c1c1c">Negro</color>
+      <color hex="#9caf88">Verde salvia</color>
+      <color hex="#8d8d8a">Gris piedra</color>
+    </colores>
+    <tallas><talla>XS</talla><talla>S</talla><talla>M</talla><talla>L</talla></tallas>
+    <actividad>Pilates</actividad>
+    <corte>Talle alto y ajuste ceñido de segunda piel. Largo completo: 71 cm de entrepierna.</corte>
+    <tejido nombre="Calma" composicion="78 % poliamida reciclada, 22 % elastano"/>
+    <imagen>img/p01.svg</imagen>
+    <pagina>legging-alinea.html</pagina>
+  </producto>
+  <producto id="p02" categoria="leggings">
+    <nombre>Legging Flow 7/8</nombre>
+    <descripcion>Largo tobillero, cintura sin costura frontal y bolsillo oculto.</descripcion>
+    <precio>72.00</precio>
+    <colores>
+      <color hex="#9caf88">Verde salvia</color>
+      <color hex="#1c1c1c">Negro</color>
+    </colores>
+    <tallas><talla>S</talla><talla>M</talla><talla>L</talla></tallas>
+    <actividad>Yoga</actividad>
+    <corte>Talle alto y ajuste ceñido. Largo 7/8: queda justo por encima del tobillo (63 cm de entrepierna).</corte>
+    <tejido nombre="Calma" composicion="78 % poliamida reciclada, 22 % elastano"/>
+    <imagen>img/p02.svg</imagen>
+    <pagina>legging-flow.html</pagina>
+  </producto>
+  <producto id="p03" categoria="tops">
+    <nombre>Top Línea</nombre>
+    <descripcion>Sujetador deportivo de soporte ligero con espalda cruzada.</descripcion>
+    <precio>42.00</precio>
+    <colores>
+      <color hex="#cdb99c">Arena</color>
+      <color hex="#1c1c1c">Negro</color>
+      <color hex="#9caf88">Verde salvia</color>
+    </colores>
+    <tallas><talla>XS</talla><talla>S</talla><talla>M</talla></tallas>
+    <actividad>Pilates</actividad>
+    <corte>Ajuste ceñido y largo corto, por encima de la cintura. Soporte ligero, pensado para copas A-C.</corte>
+    <tejido nombre="Calma" composicion="78 % poliamida reciclada, 22 % elastano"/>
+    <imagen>img/p03.svg</imagen>
+    <pagina>top-linea.html</pagina>
+  </producto>
+  <producto id="p04" categoria="tops">
+    <nombre>Camiseta Brisa</nombre>
+    <descripcion>Camiseta de manga corta, corte entallado y tejido transpirable.</descripcion>
+    <precio>38.00</precio>
+    <colores>
+      <color hex="#f6f3ee">Blanco roto</color>
+      <color hex="#cdb99c">Arena</color>
+    </colores>
+    <tallas><talla>S</talla><talla>M</talla><talla>L</talla><talla>XL</talla></tallas>
+    <actividad>Yoga</actividad>
+    <corte>Corte entallado, largo hasta la cadera. Manga corta con hombro ligeramente caído.</corte>
+    <tejido nombre="Brisa" composicion="88 % poliéster reciclado, 12 % elastano"/>
+    <imagen>img/p04.svg</imagen>
+    <pagina>camiseta-brisa.html</pagina>
+  </producto>
+  <producto id="p05" categoria="tops">
+    <nombre>Body Contorno</nombre>
+    <descripcion>Body de una pieza con escote cuadrado y acabado sin costuras.</descripcion>
+    <precio>58.00</precio>
+    <colores>
+      <color hex="#8d8d8a">Gris piedra</color>
+      <color hex="#1c1c1c">Negro</color>
+    </colores>
+    <tallas><talla>XS</talla><talla>S</talla><talla>M</talla><talla>L</talla></tallas>
+    <actividad>Pilates</actividad>
+    <corte>Ajuste ceñido de una pieza. Escote cuadrado delante y espalda media.</corte>
+    <tejido nombre="Contorno" composicion="75 % poliamida, 25 % elastano"/>
+    <imagen>img/p05.svg</imagen>
+    <pagina>body-contorno.html</pagina>
+  </producto>
+  <producto id="p06" categoria="capas">
+    <nombre>Chaqueta Define</nombre>
+    <descripcion>Chaqueta ajustada con cremallera, cortes en diagonal y puños con ojal.</descripcion>
+    <precio>95.00</precio>
+    <colores>
+      <color hex="#1c1c1c">Negro</color>
+      <color hex="#8d8d8a">Gris piedra</color>
+    </colores>
+    <tallas><talla>S</talla><talla>M</talla><talla>L</talla></tallas>
+    <actividad>Pilates</actividad>
+    <corte>Ajuste ceñido y largo hasta la cadera. Cortes en diagonal que siguen la forma del cuerpo.</corte>
+    <tejido nombre="Define" composicion="81 % poliamida, 19 % elastano"/>
+    <imagen>img/p06.svg</imagen>
+    <pagina>chaqueta-define.html</pagina>
+  </producto>
+  <producto id="p07" categoria="capas">
+    <nombre>Sudadera Calma</nombre>
+    <descripcion>Sudadera corta de algodón orgánico para antes y después de clase.</descripcion>
+    <precio>79.00</precio>
+    <colores>
+      <color hex="#cdb99c">Arena</color>
+      <color hex="#f6f3ee">Blanco roto</color>
+    </colores>
+    <tallas><talla>S</talla><talla>M</talla><talla>L</talla><talla>XL</talla></tallas>
+    <actividad>Yoga</actividad>
+    <corte>Corte holgado y largo corto, a la altura de la cintura. Hombro caído.</corte>
+    <tejido nombre="Pausa" composicion="100 % algodón orgánico, 320 g/m²"/>
+    <imagen>img/p07.svg</imagen>
+    <pagina>sudadera-calma.html</pagina>
+  </producto>
+  <producto id="p08" categoria="accesorios">
+    <nombre>Calcetines Grip</nombre>
+    <descripcion>Calcetines antideslizantes para reformer y suelo.</descripcion>
+    <precio>14.00</precio>
+    <colores>
+      <color hex="#9caf88">Verde salvia</color>
+      <color hex="#1c1c1c">Negro</color>
+      <color hex="#cdb99c">Arena</color>
+    </colores>
+    <tallas><talla>S</talla><talla>M</talla></tallas>
+    <actividad>Pilates</actividad>
+    <corte>Caña media, por encima del tobillo. Ajuste firme en el arco del pie.</corte>
+    <tejido nombre="Grip" composicion="80 % algodón orgánico, 17 % poliamida, 3 % elastano"/>
+    <imagen>img/p08.svg</imagen>
+    <pagina>calcetines-grip.html</pagina>
+  </producto>
+</catalogo>
