@@ -76,7 +76,11 @@ rocalm/
 
 ## Validación
 
-HTML y CSS validados con Nu Html Checker, el mismo motor que [validator.w3.org](https://validator.w3.org/): **0 errores**. Resultado en `capturas/validacion-w3c.txt`.
+HTML y CSS validados con los validadores oficiales del W3C: **0 errores**.
+
+- HTML ([validator.w3.org](https://validator.w3.org/)): `capturas/w3c-html-index.jpg`, sin errores ni avisos.
+- CSS ([jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)): `capturas/w3c-css-sin-errores.jpg`. Los avisos (`capturas/w3c-css-avisos.jpg`) son informativos: el validador no comprueba las variables CSS y avisa cuando un botón usa el mismo color de fondo y de borde, que es intencionado.
+- Validación de las 13 páginas: `capturas/validacion-w3c.txt`.
 
 Probado a 375 px (móvil), 768 px (tableta) y 1280 px (escritorio) sin desbordamientos. Capturas en `capturas/`.
 
